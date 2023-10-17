@@ -99,7 +99,7 @@ h1, h2 {
 }
 
 #farmacia img {
-    margin: 4em auto;
+    margin: 2em auto;
 }
 
 #farmacia .paragrafo {
@@ -192,3 +192,83 @@ footer p a {
 .copyright a {
  color: #FF9A6C;
 }
+
+@media screen and (max-width: 960px) {
+   .inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+   }
+
+   .inicio .paragrafo {
+    line-height: 100%;
+   } 
+
+   .img-inicio {
+    width: 22.5em;
+    height: 22.5em;
+   }
+
+   .links_inicio {
+    display: flex;
+    gap: 10px;
+   }
+
+   .button {
+    display: flex;
+    text-align: center;
+    line-height: 100%;
+    padding: 1em 2em;
+   }
+
+   #clinica {
+    padding: 1em 1em;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .img-clinica {
+    width: 360px;
+    height: 360px;
+   }
+
+   #farmacia {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+   }
+
+   .img-farmacia {
+    margin: 0.5em auto;
+    width: 360px;
+    height: 360px;
+   }
+
+   #duvidas {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+   }
+
+   .img-duvidas {
+    width: 360px;
+    height: 360px;
+   }
+
+   .duvida {
+    position: relative;
+   }
+
+   .duvida img {
+    position: absolute;
+    top: 2em;
+    right: 0.3em;
+    cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
