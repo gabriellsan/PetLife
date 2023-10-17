@@ -194,6 +194,14 @@ footer p a {
 }
 
 @media screen and (max-width: 960px) {
+
+    .head {
+        padding: 1em 1em ;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
    .inicio {
     display: flex;
     flex-direction: column;
