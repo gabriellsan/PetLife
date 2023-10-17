@@ -129,7 +129,7 @@ h1, h2 {
     position: absolute;
     top: 2em;
     right: 1.5em;
-
+    cursor: pointer;
 }
 
 .duvida .paragrafo {
@@ -138,6 +138,16 @@ h1, h2 {
     border-left: 1px solid #ff725e;
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
+    padding: 0 1.5em;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
     padding: 1.5em;
 }
 
