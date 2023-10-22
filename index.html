@@ -14,13 +14,26 @@
         <a href="#">
             <img src="./src/assets/logo-white.svg" alt="PetLife">
         </a>
-        <nav class="navigation">
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="./src/assets/menu_white_36dp.svg" alt=""></button>
+        </div>
+
+        <nav class="navigation" id="navigation">
             <a href="#inicio">Inicio</a>
             <a href="#clinica">Clínica</a>
             <a href="./src/pages/farmacia.html">Farmácia</a>
             <a href="./src/pages/duvidas.html">Dúvidas</a>
         </nav>
+
     </header>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a href="#clinica">Clínica</a></li>
+            <li class="nav-item"><a href="#farmacia">Farmácia</a></li>
+            <li class="nav-item"><a href="#duvidas">Dúvidas</a></li>
+        </ul>
+    </div>
 
     <main>
         <section id="inicio" class="inicio">

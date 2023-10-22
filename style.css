@@ -34,6 +34,14 @@ h1, h2 {
     text-decoration: none;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .inicio {
     display: flex;
     align-items: center;
@@ -193,14 +201,56 @@ footer p a {
  color: #FF9A6C;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
 
     .head {
         padding: 1em 1em ;
         display: flex;
-        flex-direction: column;
         gap: 10px;
     }
+
+    .mobile-menu {
+        background-color: #a4a4a4;
+    }
+
+    .mobile-menu ul li a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .open {
+        display: block;
+    }   
 
    .inicio {
     display: flex;
